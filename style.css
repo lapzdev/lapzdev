@@ -1,0 +1,12 @@
+html {
+  box-sizing: border-box;
+}
+table,
+tr,
+td,
+th,
+thead,
+tbody,
+tfoot {
+  border: thin solid black;
+}

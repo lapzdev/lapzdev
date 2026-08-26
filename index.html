@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="es-CU">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="En esta página estamos aprendiendo HTML" />
+  <!-- No más de 165 caractéres. -->
+  <style>
+    h2 {
+      color: brown;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+  <title>Aprendiendo HTML</title>
+</head>
+
+<>
+  <h2>Aprendiendo HTML</h2>
+  <h3>Desde GitHub</h3>
+  <!-- joshduck.com/periodic-table.html -->
+  <!-- Listas de sitios de referencia de HTML -->
+  <!-- https://www.w3.org/html/
+https://html.spec.whatwg.org/
+https://www.w3.org/blog/news/archives/7753
+https://developer.mozilla.org/es/docs/Web/HTML
+https://htmlreference.io/
+ -->
+  <!-- periodic table html tags. Ir a este sitio y bajar la tabla periódica de las etiquetas -->
+  <h2 id="inicio">Temario de Curso</h2>
+  <ul>
+    <li><a href="index.html#uno">Encabezados HTML</a></li>
+    <li><a href="index.html#dos">Etiquetas de texto básicas</a></li>
+    <li><a href="index.html#tres">Etiquetas de texto semánticas</a></li>
+    <li><a href="index.html#cuatro"></a>Etiquetas de saltos</li>
+    <li><a href="index.html#cinco">Prueba para hr</a></li>
+    <li><a href="index.html#seis">Etiquetas de Formateo</a></li>
+    <li><a href="index.html#siete">Etiquetas Semánticas Estructurales</a></li>
+    <li><a href="index.html#ocho">Etiquetas de Bloque vs Etiquetas de Línea</a></li>
+    <li><a href="index.html#nueve">Scripts en HTML</a></li>
+    <li><a href="index.html#diez">Lista Ordenada</a></li>
+    <li><a href="index.html#once">Lista desordenada</a></li>
+    <li><a href="index.html#doce">Lista de Definiciones</a></li>
+    <li><a href="index.html#trece">Tablas</a></li>
+    <li><a href="index.html#catorce">Enlaces</a></li>
+  </ul>
+  <hr />
+  <h2 id="uno">Encabezados HTML</h2>
+  <!-- h$*6{Encabezado de nivel $} -->
+  <h1>Encabezado de nivel 1</h1>
+  <h2>Encabezado de nivel 2</h2>
+  <h3>Encabezado de nivel 3</h3>
+  <h4>Encabezado de nivel 4</h4>
+  <h5>Encabezado de nivel 5</h5>
+  <h6>Encabezado de nivel 6</h6>
+
+  <!-- prueba con stash -->
+  <!-- prueba con diff -->
+  <a href="index.html#inicio">inicio 🦎</a>
+  <hr />
+  <h2 id="dos">Etiquetas de texto básicas</h2>
+  <p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore illum
+    aperiam commodi cupiditate veniam porro blanditiis iste excepturi earum ea
+    voluptatem temporibus exercitationem illo laboriosam assumenda minus
+    dicta, asperiores obcaecati?
+  </p>
+  <p>
+    Palabras en <b>Negrita</b>, <i>Itálica o cursiva</i>,<u>Subrayado</u>,
+    E=m*C<sup>2</sup>, H<sub>2</sub>O, <mark>marca texto</mark>,
+    <small>Letras pequeñas</small>
+  </p>
+  <a href="index.html#inicio">inicio 🦎</a>
+  <hr />
+  <h2 id="tres">Etiquetas de texto semánticas</h2>
+  <p><strong>Este texto es importante</strong></p>
+  <p><em>Este texto hace énfasis</em></p>
+
+  <blockquote>Yo sólo sé que no sé nada ...</blockquote>
+  <cite>Sócrates</cite>
+  <a href="index.html#inicio">inicio 🦎</a>
+  <hr />
+  <h2 id="cuatro">Etiquetas de saltos</h2>
+  <!-- <br>  Esta es una etiqueta de salto de línea -->
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+    Minima saepe sapiente fuga in est eaque,<br />
+    aut vitae unde doloribus. At eaque nisi reprehenderit sint voluptas!
+    <br /><br /><br /><br /><br /><br />Sunt ab quos fugit similique.
+  </p>
+  <!-- <hr> Esta es una etiqueta de salto semántico de contenido -->
+  <a href="index.html#inicio">inicio 🦎</a>
+
+  <hr />
+  <h2 id="cinco">Prueba para hr</h2>
+  <p>
+    Este texto está separado del anterior por el hr que es un separador
+    semántico de contenido
+  </p>
+  <a href="index.html#inicio">inicio 🦎</a>
+  <hr />
+  <h2 id="seis">Etiquetas de Formateo</h2>
+  <!-- Etiqueta de pre formato (pre)-->
+  <p>
+  <pre>
+        Tareas por hacer
+          HTML 
+          CSS 
+          JAVASCRIPT
+      </pre>
+  </p>
+  <!-- La etiqueta <code> le da formato de código al texto -->
+  <p><code>Este texto tiene formato de código</code></p>
+  <!-- Ejemplo de formato con las etiquetas <pre> y <code>, siendo utilizadas para
+  escribir un codigo indentado -->
+  <p>
+
+  <pre><code>
+      &lt;div&gt;   
+         Este es un texto de código
+      &lt;div/&gt;
+    </code></pre>
+  </p>
+  <a href="index.html#inicio">inicio 🦎</a>
+  <hr>
+  <h2 id="siete">Etiquetas Semánticas Estructurales</h2>
+  <div>Esta etiqueta contenedora no tiene semántica</div>
+  <header> header- Cabecera de un sitio web o sección</header>
+  <main>main-Define la Sección Principal del Documento. Solo puede existir una etiqueta main por documento</main>
+  <footer>footer-pie de página de un sitio web o de una sección</footer>
+  <nav>nav - Representa una navegación</nav>
+  <article> article - Representa una sección de autocontenido( que por si sola se explica)</article>
+  <aside> aside - Representa un contenido complementario o secundario</aside>
+  <section>section - Representa una sección de contenido</section>
+  <address>address - Representa una información de contacto</address>
+  <a href="index.html#inicio">inicio 🦎</a>
+  <hr>
+  <h2 id="ocho">Etiquetas de Bloque vs Etiquetas de Línea</h2>
+  <div style="background-color: yellow;">La etiqueta de bloque por excelencia es div; una etiqueta de bloque es aquella
+    que genera saltos de línea con sus hermanas, además de ocupar todo el ancho del img/Perfil.pngelemento</div>
+  <span style="background-color: aqua;">La etiqueta de línea por excelencia es span. una etiqueta de línea sólo ocupa
+    el espacio necesario que tiene su contenido.</span>
+  <span style="background-color: burlywood;">hola soy otra span</span>
+  <a href="index.html#inicio">inicio 🦎</a>
+  <hr>
+  <h2 id="nueve">Scripts en HTML 😊😊😊(❁´◡`❁)🤑🤑🤑🤑</h2>
+
+  <!-- <img src="img/Perfil.png" alt="mis fotos de portada" width="320" height="320"> -->
+  <figcaption>mi foto1973 de portada</figcaption>
+  <div>xlfglnffniognidfn</div>
+  <a href="index.html#inicio">inicio 🦎</a>
+  <hr>
+  <h2 id="diez">Lista Ordenada</h2>
+  <ol type="1">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+    <li>Item 6</li>
+    <li>Item 7</li>
+    <li>Item 8</li>
+  </ol>
+
+  <ol type="1" start="9">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+    <li>Item 6</li>
+    <li>Item 7</li>
+    <li>Item 8</li>
+  </ol>
+  <!-- Los números, al aplicar reversed, se ordenan inversamente  -->
+  <!-- reversed es un atributo booleano -->
+  <ol type="1" reversed>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+    <li>Item 6</li>
+    <li>Item 7</li>
+    <li>Item 8</li>
+  </ol>
+  <a href="index.html#inicio">inicio 🦎</a>
+  <hr>
+  <h2 id="once">Lista desordenada</h2>
+  <ul>
+    <li>Ir al Trabajo</li>
+    <li>Estudiar</li>
+    <li>Hacer Ejercicio</li>
+  </ul>
+  <ul type="square">
+    <li>Ir al Trabajo</li>
+    <li>Estudiar</li>
+    <li>Hacer Ejercicio</li>
+  </ul>
+  <ul type="circle">
+    <li>Ir al Trabajo</li>
+    <li>Estudiar</li>
+    <li>Hacer Ejercicio</li>
+  </ul>
+  <a href="index.html#inicio">inicio 🦎</a>
+  <hr>
+  <h2 id="doce">Lista de Definiciones</h2>
+  <dl>
+    <dt>HTML</dt>
+    <dd>Lenguaje de Marcado de Hypertexto(Hyper Text Markup Language en Inglés):
+      Es un lenguaje de marcado que define el contenido de la red.
+    </dd>
+    <dt>CSS</dt>
+    <dd>Hojas de Estilos en Cascada(Cascade Style Sheet en Inglés):Es un lenguaje de definición que da estilo al HTML.
+    </dd>
+    <dt>JavaScript</dt>
+    <dd>Es el lenguaje de programación de la Web.</dd>
+  </dl>
+  <a href="index.html#inicio">inicio 🦎</a>
+  <hr>
+
+  <h2 id="trece">Tablas</h2>
+  <table>
+    <tr>
+      <td>Item 11</td>
+      <td>Item 12</td>
+      <td>Item 13</td>
+    </tr>
+    <tr>
+      <td>Item 21</td>
+      <td>Item 22</td>
+      <td>Item 23</td>
+    </tr>
+    <tr>
+      <td>Item 31</td>
+      <td>Item 32</td>
+      <td>Item 33</td>
+    </tr>
+  </table>
+  <br><br><br>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="3">Tabla de Datos </th>
+      </tr>
+      <tr>
+        <th>Nombre</th>
+        <th>Cargo</th>
+        <th>Edad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lázaro</td>
+        <td>Informático</td>
+        <td>52</td>
+      </tr>
+    </tbody>
+    <tfoot></tfoot>
+  </table>
+  <br><br><br>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="3">Tabla de Datos 2 </th>
+      </tr>
+      <tr>
+        <th>Nombre</th>
+        <th>Cargo</th>
+        <th>Edad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lázaro</td>
+        <td rowspan="2">Informático</td>
+        <td rowspan="3">52</td>
+      </tr>
+      <tr>
+        <td>Joseman</td>
+
+
+      </tr>
+      <tr>
+        <td>Alfredo</td>
+        <td>Diseñador</td>
+
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th colspan="3"> <small>Estos datos son colectados de Internet.</small></th>
+      </tr>
+    </tfoot>
+  </table>
+  <a href="index.html#inicio">inicio 🦎</a>
+  <hr>
+  <h2 id="catorce">Enlaces </h2>
+  <a href="otro.html">Hola hacia otro.html</a><br><br>
+  <!-- Con el enlace externo, para abrir el enlace en una nueva página
+en blanco utilizar  target="_blank"-->
+  <a href="https://jonmircha.com" target="_blank">Tutoriales Jon Mircha
+    <img src="img/Perfil.png" alt="Tutoriales Jon Mircha " width="40" height="40">
+  </a>
+  <br>
+  <!-- El rel=nofollow sirve para sugerir a los bots encargados de revisar el código 
+ que no sigan ese enlace por no constituir parte de mi tema en la página,u otras razones por las que me interesa que no sigan a ese sitio. -->
+  <a href="https://cualquiera.com" target="_blank" rel="nofollow">Ruta a otros enlaces externos que no tienen que ver
+    con
+    mi contenido</a>
+  <a href="index.html#inicio">inicio 🦎</a>
+
+  </body>
+
+</html>
